@@ -1,0 +1,10 @@
+Large computing problems can be solved by decomposing them into small problems, which are easier to compute, then combining the solutions to these problems back into the solution to the original problem.
+
+A basic compute farm is a system infrastructure of many machines which hosts such embarrassingly parallel computational problems.
+ 
+A client submits a single big Task to this system via a Task Server, specifying how it can be decomposed into sub-tasks (using the API provided). 
+The Task Server then makes these tasks available to worker computers (machines in the cluster) which execute these tasks, and return results back to the Task Server. 
+The Task Server then combines these sub-results back into the eventual Result which it returns to the client.
+
+This brief overview of the system is shown in the figure at this link: 
+http://fahad-ghani.appspot.com/displayproject/1
